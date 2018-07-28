@@ -1,6 +1,15 @@
 language: csharp
 mono: none
 dotnet: 2.1.300
+addons:
+  apt:
+    packages:
+    - zlib1g
+    - fontconfig
+    - libfreetype6
+    - libx11-6
+    - libxext6
+    - libxrender1
 script:
   - dotnet tool install -g dotnet-deathworlders-md-convert
   - cd tools/markdown-converter/
