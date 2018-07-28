@@ -3,6 +3,6 @@ do
 	if [[ "$markdown" != *_index.md ]]
 	then
 		echo "$markdown"
-		dotnet-deathworlders-md-convert $markdown
+		dotnet deathworlders-md-convert $markdown
 	fi
 done
